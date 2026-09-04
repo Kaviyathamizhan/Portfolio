@@ -52,6 +52,7 @@ export interface Achievement {
   year: number
   organization?: string
   url?: string
+  certificateUrl?: string
   icon?: string
   featured: boolean
 }
@@ -115,6 +116,18 @@ export interface Experience {
   technologies: Technology[]
   location?: string
   companyLogo?: string
+  certificateUrl?: string
+  grade?: string
+}
+
+export interface SubExperience {
+  id: string
+  organization: string
+  role: string
+  duration: string
+  description: string
+  tags: string[]
+  certificateUrl: string
 }
 
 export interface Contact {
@@ -161,6 +174,7 @@ export interface Certification {
   issueDate: string
   credentialUrl?: string
   certificateImage?: string
+  certificateUrl?: string
   featured: boolean
 }
 

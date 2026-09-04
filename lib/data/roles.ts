@@ -1,11 +1,11 @@
 import { Role, BuilderStatement } from '@/types'
 
 export const rolesData: Role[] = [
-  { text: 'Building Full-Stack AI Applications' },
-  { text: 'AI Engineer' },
-  { text: 'Machine Learning Engineer' },
-  { text: 'Research Engineer' },
-  { text: 'Backend & AI Systems Developer' },
+  { text: 'AI & Machine Learning' },
+  { text: 'Python Developer' },
+  { text: 'Backend Systems' },
+  { text: 'Data-Driven Problem Solver' },
+  { text: 'End-to-End ML Engineering' },
 ]
 
 export const builderStatement: BuilderStatement = {

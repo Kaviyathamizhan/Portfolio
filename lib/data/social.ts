@@ -22,7 +22,7 @@ export const socialData: Social[] = [
   },
   {
     platform: 'Email',
-    url: 'mailto:kaviyathamizhan37@gmail.com',
+    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=kaviyathamizhan37@gmail.com',
     icon: 'Mail',
     enabled: true,
   },

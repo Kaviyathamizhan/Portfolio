@@ -17,7 +17,7 @@ export const statsData: Stat[] = [
   {
     id: 'cgpa',
     label: 'CGPA',
-    value: 9.15,
+    value: 9.16,
     suffix: ' / 10',
     featured: true,
   },

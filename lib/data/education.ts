@@ -40,7 +40,7 @@ export const educationData: Education[] = [
     institution: 'Bharath Institute of Higher Education and Research (BIHER)',
     duration: '2022 – 2026',
     location: 'Chennai, Tamil Nadu, India',
-    cgpa: '9.15 / 10',
+    cgpa: '9.16 / 10',
     coursework: [
       'Machine Learning',
       'Deep Learning',
