@@ -59,7 +59,7 @@ export function Button({
         target={target}
         rel={rel}
         className={combinedClasses}
-        onClick={props.onClick as any}
+        onClick={props.onClick as React.MouseEventHandler<HTMLAnchorElement> | undefined}
       >
         {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
         {children}
