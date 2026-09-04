@@ -36,17 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
 *.tsbuildinfo
 next-env.d.ts
 
-# personal assets, documents & media
-*.pdf
-public/*.pdf
-public/certificates/
-public/other_intern_certificates/
-public/experience/
-public/images/profile/
+# root working files
+/*.pdf
 
 # ide and editor
 .idea/
