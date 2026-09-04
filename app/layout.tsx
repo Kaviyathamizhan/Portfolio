@@ -1,9 +1,16 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, Plus_Jakarta_Sans, JetBrains_Mono, Anton, Bebas_Neue, Allura, Great_Vibes, Alex_Brush, Sacramento } from 'next/font/google'
 import './globals.css'
 import { seoData } from '@/lib/data'
 import { AnimatedBackground } from '@/components/shared'
 import { CommandPalette } from '@/components/ui/CommandPalette'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#09090b',
+}
 
 const spaceGrotesk = Space_Grotesk({
   variable: '--font-space-grotesk',

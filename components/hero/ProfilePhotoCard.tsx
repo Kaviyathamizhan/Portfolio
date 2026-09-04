@@ -3,10 +3,6 @@
 import React from 'react'
 import { Lanyard3DScene } from './Lanyard3DScene'
 
-interface ProfilePhotoCardProps {
-  isAssembled?: boolean
-}
-
-export function ProfilePhotoCard({ isAssembled = true }: ProfilePhotoCardProps) {
+export function ProfilePhotoCard() {
   return <Lanyard3DScene />
 }

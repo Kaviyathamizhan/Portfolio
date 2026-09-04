@@ -387,10 +387,26 @@ useGLTF.preload(cardGLB)
 export function Lanyard3DScene(props: Lanyard3DSceneProps) {
   const reduced = useReducedMotion()
   const [isMounted, setIsMounted] = useState(false)
+  const [cameraZ, setCameraZ] = useState(30)
   const customTexture = useKaviyathamizhanTexture(props)
 
   useEffect(() => {
     setIsMounted(true)
+    const handleResize = () => {
+      const w = window.innerWidth
+      if (w < 480) {
+        setCameraZ(44)
+      } else if (w < 768) {
+        setCameraZ(38)
+      } else if (w < 1024) {
+        setCameraZ(34)
+      } else {
+        setCameraZ(30)
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   if (!isMounted) return null
@@ -414,9 +430,9 @@ export function Lanyard3DScene(props: Lanyard3DSceneProps) {
   }
 
   return (
-    <div className="relative w-full h-[760px] -mt-16 my-auto flex justify-center items-center select-none overflow-visible">
+    <div className="relative w-full h-[520px] sm:h-[620px] lg:h-[760px] -mt-10 lg:-mt-16 my-auto flex justify-center items-center select-none overflow-visible">
       <Canvas
-        camera={{ position: [0, 0, 30], fov: 20 }}
+        camera={{ position: [0, 0, cameraZ], fov: 20 }}
         gl={{ alpha: true }}
         className="w-full h-full"
       >

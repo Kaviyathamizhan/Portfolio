@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { navigationData, personalData } from '@/lib/data'
 import { Button } from '@/components/shared'
 import { SignatureSVG } from '@/components/hero/SignatureSVG'
-import { Menu, X, Download, Search, LayoutGrid, ArrowRight } from 'lucide-react'
+import { X, Download, Search, LayoutGrid, ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 

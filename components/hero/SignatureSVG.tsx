@@ -66,7 +66,7 @@ export function SignatureSVG({
         }}
       >
         <span
-          className="text-white text-4xl sm:text-5xl md:text-6xl tracking-wider whitespace-nowrap block drop-shadow-[0_4px_16px_rgba(255,255,255,0.25)] font-normal"
+          className="text-white text-[clamp(24px,7.5vw,60px)] tracking-wide sm:tracking-wider whitespace-nowrap block drop-shadow-[0_4px_16px_rgba(255,255,255,0.25)] font-normal"
           style={{
             fontFamily: "'Alex Brush', 'Allura', 'Great Vibes', 'Sacramento', cursive",
             lineHeight: 1.3,
