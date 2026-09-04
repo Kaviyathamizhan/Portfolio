@@ -39,6 +39,16 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && toggleMenuOpen) {
+        setToggleMenuOpen(false)
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [toggleMenuOpen])
+
   const openCommandPalette = () => {
     window.dispatchEvent(new CustomEvent('open-command-palette'))
   }

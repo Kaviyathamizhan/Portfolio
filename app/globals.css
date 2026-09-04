@@ -18,9 +18,9 @@
   --border-strong: #52525b;
 
   --text-primary: #fafafa;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
-  --text-disabled: #52525b;
+  --text-secondary: #d4d4d8;
+  --text-muted: #a1a1aa;
+  --text-disabled: #71717a;
 
   --font-anton: 'Anton', sans-serif;
   --font-display: var(--font-space-grotesk), sans-serif;
@@ -279,7 +279,9 @@ code, pre, .font-mono {
 }
 
 .marquee-container:hover .animate-marquee-left,
-.marquee-container:hover .animate-marquee-right {
+.marquee-container:hover .animate-marquee-right,
+.marquee-container:focus-within .animate-marquee-left,
+.marquee-container:focus-within .animate-marquee-right {
   animation-play-state: paused;
 }
 
