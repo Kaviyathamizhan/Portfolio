@@ -28,7 +28,6 @@ export const socialData: Social[] = [
   },
   {
     platform: 'Instagram',
-  // TODO: Add Instagram profile URL
     url: 'https://www.instagram.com/the._.boss._.kt?igsi=eTNoZXN5ejMxNzE5',
     icon: 'Instagram',
     enabled: true,
