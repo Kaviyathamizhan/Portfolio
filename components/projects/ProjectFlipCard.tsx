@@ -76,30 +76,21 @@ export function ProjectFlipCard({ project, size = 'default' }: ProjectFlipCardPr
               {project.description}
             </p>
 
-            {/* KEY VERIFIED RESULT / METRIC FOCAL POINT */}
+            {/* METRIC FOCAL POINT (CENTERED) */}
             <div
-              className={`rounded-lg bg-[#09090b] border border-[#27272a] flex items-center justify-between ${
+              className={`rounded-lg bg-[#09090b] border border-[#27272a] flex flex-col items-center justify-center text-center ${
                 isCompact ? 'p-3 mb-3' : 'p-4 mb-4'
               }`}
             >
-              <div>
-                <span
-                  className={`font-bold font-display text-text-primary tracking-tight block ${
-                    isCompact ? 'text-xl md:text-2xl' : 'text-2xl md:text-3xl'
-                  }`}
-                >
-                  {project.metric.value}
-                </span>
-                <span className={`font-mono text-text-muted ${isCompact ? 'text-[11px]' : 'text-xs'}`}>
-                  {project.metric.label}
-                </span>
-              </div>
               <span
-                className={`font-mono text-emerald-400 font-semibold uppercase tracking-wider ${
-                  isCompact ? 'text-[10px]' : 'text-[11px]'
+                className={`font-bold font-display text-text-primary tracking-tight block ${
+                  isCompact ? 'text-xl md:text-2xl' : 'text-2xl md:text-3xl'
                 }`}
               >
-                Key Result
+                {project.metric.value}
+              </span>
+              <span className={`font-mono text-text-muted ${isCompact ? 'text-[11px]' : 'text-xs'}`}>
+                {project.metric.label}
               </span>
             </div>
           </div>

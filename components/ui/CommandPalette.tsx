@@ -149,7 +149,7 @@ export function CommandPalette() {
       label: 'Send Email',
       category: 'Links',
       icon: <Mail className="w-4 h-4 text-primary" />,
-      action: () => navigateTo(`mailto:${personalData.email}`),
+      action: () => navigateTo(`https://mail.google.com/mail/?view=cm&fs=1&to=${personalData.email}`),
     },
     ...projectsData.map((p) => ({
       id: `project-${p.id}`,

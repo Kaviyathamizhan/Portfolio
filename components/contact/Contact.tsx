@@ -29,7 +29,9 @@ export function Contact() {
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8 w-full max-w-sm">
                 <Button
-                  href={`mailto:${contactData.email}`}
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contactData.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   variant="primary"
                   size="md"
                   className="gap-2 font-medium justify-center"
